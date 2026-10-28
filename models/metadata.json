@@ -1,0 +1,133 @@
+{
+  "feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "numerical_columns": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "label_mappings": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "SeniorCitizen": [
+      0,
+      1
+    ],
+    "Partner": [
+      "No",
+      "Yes"
+    ],
+    "Dependents": [
+      "No",
+      "Yes"
+    ],
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "'No phone service'",
+      "No",
+      "Yes"
+    ],
+    "InternetService": [
+      "'Fiber optic'",
+      "DSL",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "'No internet service'",
+      "No",
+      "Yes"
+    ],
+    "OnlineBackup": [
+      "'No internet service'",
+      "No",
+      "Yes"
+    ],
+    "DeviceProtection": [
+      "'No internet service'",
+      "No",
+      "Yes"
+    ],
+    "TechSupport": [
+      "'No internet service'",
+      "No",
+      "Yes"
+    ],
+    "StreamingTV": [
+      "'No internet service'",
+      "No",
+      "Yes"
+    ],
+    "StreamingMovies": [
+      "'No internet service'",
+      "No",
+      "Yes"
+    ],
+    "Contract": [
+      "'One year'",
+      "'Two year'",
+      "Month-to-month"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "'Bank transfer (automatic)'",
+      "'Credit card (automatic)'",
+      "'Electronic check'",
+      "'Mailed check'"
+    ]
+  },
+  "target_classes": [
+    "No",
+    "Yes"
+  ],
+  "best_params": {
+    "classifier__max_depth": null,
+    "classifier__max_features": "sqrt",
+    "classifier__min_samples_split": 2,
+    "classifier__n_estimators": 200
+  }
+}
